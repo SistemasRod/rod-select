@@ -67,20 +67,35 @@
                         
                         <h1>Cotiza tu proyecto con nosotros:</h1>
                         <label for="nombre" class="form-label"> <i class="fas fa-user"></i> Nombre:</label>
-                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresa tu nombre*" required>
-
+                        <div class="form-input">
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresa tu nombre*" required>
+                            <i id="iconoInput" class="formulario-validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="form-input-error">Solo se aceptan caracteres de la a-z</p>
+                        
                         <label for="correo" class="form-label"> </i> <i class="fas fa-envelope"></i> Correo:</label>
-                        <input type="email" class="form-control" name="correo" id="correo" placeholder="Correo Corporativo*" required
-                        >
-
+                            <div class="form-input">
+                            <input type="email" class="form-control" name="correo" id="correo" placeholder="Correo Corporativo*" required
+                            >
+                            <i id="iconoInput" class="formulario-validacion-estado fas fa-times-circle"></i>
+                        </div>
 
                         <label for="nombre" class="form-label"> <i class="fab fa-whatsapp"></i> Teléfono:</label>
-                        <input  type="text" class="form-control" name="nombre" id="telefono" placeholder="Ingresa tu teléfono de contacto"
+                            <div class="form-input">
+                            <input  type="text" class="form-control" name="nombre" id="telefono" placeholder="Ingresa tu teléfono de contacto"
+                            >
+                            <i id="iconoInput" class="formulario-validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <div class="form-mensaje">
+                            <p><i class="fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellena el formulario</p>
+                        </div>
+                        <div class="form-btn">
+                            <button type="submit" id="enviar" class="btn btn-dark">Enviar</button>
+                            <p class="form-mensaje-exito"
+                            id="form-mensaje-exito"
+                            >Formulario envíado exitosamente!</p>
+                        </div>
                         
-                        >
-                        
-                        
-                        <button type="submit" id="enviar" class="btn btn-dark">Enviar</button>
                     </form>
                     </div>
                 </div>
